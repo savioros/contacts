@@ -9,8 +9,6 @@ function App() {
   const [modal, setModal] = useState(null)
   const [notification, setNotification] = useState(null)
 
-  console.log(contacts)
-
   const lowerSearchInput = searchInput.toLowerCase()
 
   const filteredContacts = searchInput.length > 0
