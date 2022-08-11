@@ -1,0 +1,83 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 323px;
+    gap: 30px;
+    overflow-y: auto;
+}
+
+.form::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+
+.form::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.field input{
+    width: 25rem;
+    padding: 10px 15px 10px 0px;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    margin-bottom: 15px;
+}
+
+.field input:focus{
+    outline: 0;
+}
+
+.field button{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.field p{
+    color: #d60d2b;
+    font-size: 12px;
+}
+
+.btnAdd{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    padding: 15px 35px;
+    margin-top: 30px;
+    transition: .3s ease-out;
+}
+
+.btnAdd:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+@media(max-width: 750px){
+    .field input{
+        width: 18rem;
+    }
+
+    .btnAdd{
+        padding: 10px 35px;
+    }
+}
+
+@media(max-width: 550px){
+    .field input{
+        width: 14rem;
+    }
+}
+
+@media(max-width: 400px){
+    .field input{
+        width: 10rem;
+    }
+}

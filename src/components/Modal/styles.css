@@ -1,0 +1,45 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(.8);
+    animation: scaleUp .2s forwards;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 94px);
+    align-items: center;
+}
+
+.card-add-contact{
+    position: absolute;
+    max-width: 1000px;
+    width: 60%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    border-radius: 15px;
+}
+
+@keyframes scaleUp{
+    to{
+        opacity: initial;
+        transform: initial;
+    }
+}
+
+@media(max-width: 400px){
+    .header-modal button{
+        display: none;
+    }
+}
